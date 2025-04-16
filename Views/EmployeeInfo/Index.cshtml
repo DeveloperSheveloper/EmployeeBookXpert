@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Styles.Render("~/Content/customCss")
+<div class="projTitle">
+    <h2> <i class="fas fa-book-open"></i> BOOKXPERT</h2>  &nbsp;&nbsp; <h3>Employee Management System</h3>
+</div>
+<br />
+<div id="filterHeader" class="col-lg-12 col-md-12 col-sm-12">
+    <div class="headerbuttons">
+        <button class="btn btn-info" id="btnAddEmployee"><i class="fas fa-user-plus"></i>&nbsp; Add Employee</button>
+    </div>
+    <div class="filters col-md-4">
+        <div class="searchfilter">
+            <i class="fas fa-search"></i>&nbsp;&nbsp;
+            <input type="text" class="form-control" placeholder="Search by Name" />
+        </div>
+        <button id="btnChartView" class="btn btn-success"><i class="fas fa-chart-pie"></i> View Chart</button>
+    </div>
+</div>
+
+

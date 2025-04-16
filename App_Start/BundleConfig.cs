@@ -25,6 +25,9 @@ namespace EmployeeBookXpert
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/customCss").Include(       //Added Style Bundle for custom css 
+                     "~/Content/Custom/Index.css"));
         }
     }
 }
