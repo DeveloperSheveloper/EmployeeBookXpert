@@ -10,9 +10,9 @@
 <br />
 <div id="filterHeader" class="col-lg-12 col-md-12 col-sm-12">
     <div class="headerbuttons">
-        <button class="btn btn-info" id="btnAddEmployee"><i class="fas fa-user-plus"></i>&nbsp; Add Employee</button>
+        <button class="btn btn-info" id="btnAddEmployee" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-user-plus"></i>&nbsp; Add Employee</button>
     </div>
-    <div class="filters col-md-4">
+    <div class="filters col-md-4 col-sm-6">
         <div class="searchfilter">
             <i class="fas fa-search"></i>&nbsp;&nbsp;
             <input type="text" class="form-control" placeholder="Search by Name" />
@@ -21,4 +21,79 @@
     </div>
 </div>
 
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user-plus"></i>&nbsp; Add Employee</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12 col-sm-12">
+                    <form id="frmEmployee" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="txtEmployeeName" class="form-label">Name: *</label>
+                                <input type="text" class="form-control" id="txtEmployeeName" name="EmployeeName">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="txtDesignation" class="form-label">Designation: *</label>
+                                <input type="text" class="form-control" id="txtDesignation" name="Designation">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="dtDOJ" class="form-label">Date of Joining (D.O.J): *</label>
+                                <input type="date" class="form-control" id="dtDOJ" name="DOJ">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="txtSalary" class="form-label">Salary: *</label>
+                                <input type="number" class="form-control" id="txtSalary" name="Salary">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label d-block">Gender: *</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="Gender" id="Male" value="M">
+                                    <label class="form-check-label" for="Male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="Gender" id="Female" value="F">
+                                    <label class="form-check-label" for="Female">Female</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="ddlStates" class="form-label">State: *</label>s
+                                <select id="ddlStates" class="form-control" name="State">
+                                    <option value="-1">--Select State--</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="dtDOB" class="form-label">Date of Birth (D.O.B): *</label>
+                                <input type="date" class="form-control" id="dtDOB" name="DOB">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="txtAge" class="form-label">Age: *</label>
+                                <input type="text" class="form-control" id="txtAge" name="Age" disabled>
+                            </div>
+                        </div>
+                        <br />
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/customJS")
 

@@ -1,0 +1,3 @@
+﻿$("#btnAddEmployee").on("click", function () {
+    
+});
