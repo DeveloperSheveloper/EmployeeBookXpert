@@ -36,10 +36,12 @@
                             <div class="col-md-6">
                                 <label for="txtEmployeeName" class="form-label">Name: *</label>
                                 <input type="text" class="form-control" id="txtEmployeeName" name="EmployeeName">
+                                <small id="lblNameError"></small>
                             </div>
                             <div class="col-md-6">
                                 <label for="txtDesignation" class="form-label">Designation: *</label>
                                 <input type="text" class="form-control" id="txtDesignation" name="Designation">
+                                <small id="lblDesignationError"></small>
                             </div>
                         </div>
                         <br />
@@ -47,10 +49,12 @@
                             <div class="col-md-6">
                                 <label for="dtDOJ" class="form-label">Date of Joining (D.O.J): *</label>
                                 <input type="date" class="form-control" id="dtDOJ" name="DOJ">
+                                <small id="lblDOJError"></small>
                             </div>
                             <div class="col-md-6">
-                                <label for="txtSalary" class="form-label">Salary: *</label>
+                                <label for="txtSalary" class="form-label">Salary (₹): *</label>
                                 <input type="number" class="form-control" id="txtSalary" name="Salary">
+                                <small id="lblSalaryError"></small>
                             </div>
                         </div>
                         <br />
@@ -67,15 +71,19 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <label for="ddlStates" class="form-label">State: *</label>s
+                                <label for="ddlStates" class="form-label">State: *</label>
                                 <select id="ddlStates" class="form-control" name="State">
                                     <option value="-1">--Select State--</option>
                                 </select>
+                                <small id="lblStateError"></small>
                             </div>
-
+                        </div>
+                        <br />
+                        <div class="row">
                             <div class="col-md-6">
                                 <label for="dtDOB" class="form-label">Date of Birth (D.O.B): *</label>
                                 <input type="date" class="form-control" id="dtDOB" name="DOB">
+                                <small id="lblDOBError"></small>
                             </div>
 
                             <div class="col-md-6">
@@ -89,7 +97,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" id="btnSaveEmployee" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

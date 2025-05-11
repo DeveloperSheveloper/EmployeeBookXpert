@@ -13,5 +13,12 @@ namespace EmployeeBookXpert.Controllers
         {
             return View();
         }
+        
+        [HttpPost]
+        public JsonResult GetStates()
+        {
+            JsonResult result = new JsonResult();
+            return result;
+        }
     }
 }
