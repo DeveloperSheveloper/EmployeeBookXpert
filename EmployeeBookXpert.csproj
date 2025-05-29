@@ -137,9 +137,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\BAL\EmployeeInformation.cs" />
+    <Compile Include="Helper\BAL\MasterData.cs" />
+    <Compile Include="Helper\DAL\BookXpertDAL.cs" />
     <Compile Include="Models\EmployeeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ApiHelperController.cs" />
+    <Compile Include="Services\DropdownController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -195,7 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Helper\" />
     <Folder Include="Views\ApiService\" />
   </ItemGroup>
   <ItemGroup>
